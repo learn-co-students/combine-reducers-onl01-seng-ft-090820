@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 class Authors extends Component {
 
   render() {
+    debugger
 
     let authors = this.props.authors.map(author => <li key={author.id}>{author.authorName}</li>);
 
