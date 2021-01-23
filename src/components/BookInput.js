@@ -19,6 +19,7 @@ export class BookInput extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
+    debugger
     const book = {...this.state, id: uuid() };
     this.props.addBook(book);
     this.setState({

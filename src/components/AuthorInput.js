@@ -10,6 +10,7 @@ export class AuthorInput extends Component {
   }
 
   handleOnChange = event => {
+    // debugger
     this.setState({
       [event.target.name]: event.target.value
     });
@@ -17,6 +18,7 @@ export class AuthorInput extends Component {
 
 
   handleOnSubmit = event => {
+    debugger
     event.preventDefault();
     const author = {...this.state, id: uuid() };
     this.props.addAuthor(author);
